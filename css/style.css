@@ -1,0 +1,489 @@
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+#header {
+  z-index: 997;
+  transition: all 0.5s;
+  height: 80px;
+  background: rgba(25, 28, 31, 0.8);
+}
+
+#header.header-transparent {
+  background: transparent;
+}
+
+#header.header-scrolled {
+  height: 60px;
+  background: rgba(25, 28, 31, 0.5);
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/* Desktop Navigation */
+
+.nav-menu, .nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu > ul {
+  display: flex;
+}
+
+.nav-menu > ul > li {
+  position: relative;
+  justify-content: center;
+}
+
+.nav-menu a {
+  display: block;
+  position: relative;
+  color: #fff;
+  padding: 10px 15px;
+  transition: 0.3s;
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
+  color: black;
+  text-decoration: none;
+}
+
+.nav-menu .drop-down ul {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: calc(100% + 30px);
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  padding: 10px 0;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  transition: ease all 0.3s;
+}
+
+.nav-menu .drop-down:hover > ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+
+.nav-menu .drop-down li {
+  min-width: 180px;
+  position: relative;
+}
+
+.nav-menu .drop-down ul a {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: none;
+  color: #3b434a;
+}
+
+.nav-menu .drop-down ul a:hover, .nav-menu .drop-down ul .active > a, .nav-menu .drop-down ul li:hover > a {
+  color: #ffb727;
+}
+
+.nav-menu .drop-down > a:after {
+  content: "\ea99";
+  font-family: IcoFont;
+  padding-left: 5px;
+}
+
+.nav-menu .drop-down .drop-down ul {
+  top: 0;
+  left: calc(100% - 30px);
+}
+
+.nav-menu .drop-down .drop-down:hover > ul {
+  opacity: 1;
+  top: 0;
+  left: 100%;
+}
+
+.nav-menu .drop-down .drop-down > a {
+  padding-right: 35px;
+}
+
+.nav-menu .drop-down .drop-down > a:after {
+  content: "\eaa0";
+  font-family: IcoFont;
+  position: absolute;
+  right: 15px;
+}
+
+@media (max-width: 1366px) {
+  .nav-menu .drop-down .drop-down ul {
+    left: -90%;
+  }
+  .nav-menu .drop-down .drop-down:hover > ul {
+    left: -100%;
+  }
+  .nav-menu .drop-down .drop-down > a:after {
+    content: "\ea9d";
+  }
+}
+
+
+.atas {
+	background-color: rgba(128,128,128,0.1);
+	height: 920px;
+	background-image:url(../img/flat-lay-office-desk-assortment-with-copy-space.jpg);
+	background-size: 100% 100%;
+	margin:none;
+}	
+
+.atas .atas_satu {
+	margin-top: 8%;
+	margin-left: 30%;
+	float: left;
+
+} 
+
+.atas .atas_satu h1{
+	font-weight: bold;
+	font-size: 50px;
+	text-align: left;
+		
+}
+
+.atas .atas_satu h2{	
+	font-weight: bold;
+	font-size: 84px;
+	text-align: left;
+	color: white;		
+}
+
+.atas .atas_satu h3{	
+	font-weight: bold;
+	font-size: 40px;
+	text-align: left;		
+}
+
+.atas .atas_satu button{	
+	
+	font-size: 30px;		
+}
+
+.atas {
+    background-attachment: fixed;
+  }
+}
+
+ @import url('https://fonts.googleapis.com/css?family=Quicksand|Satisfy&display=swap');
+  .carousel-indicators li{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+  }
+  .card-body {background: none}
+  .pt-6 {padding-top: 4rem; font-family: 'Satisfy';}
+  a {font-family: 'Quicksand'; color: #212529}
+  a:hover {text-decoration: none; font-weight: 400;}
+
+#about .container .row .col-md-12 .card .card-body .row .fotox{
+	background-image: url(../img/frame.png);
+	background-size: 376px 100%;
+	box-shadow: 2px 2px 15px rgba(0,0,0,0.8);
+	background-repeat: no-repeat;
+	
+}
+
+.service-area {
+  background: white;
+  margin-bottom: 30px;
+}
+
+.single-service .top {
+  height: 260px;
+  background: #f2c246;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+}
+
+.single-service .top .content span {
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  font-size: 36px;
+  color: #f3487f;
+}
+
+.single-service .top .content h3 {
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  font-size: 20px;
+  /*margin-top: 20px;*/
+}
+
+.single-service .bottom {
+  height: 260px;
+  background: #3a3a3c;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px;
+  color: #fff;
+}
+
+.single-service:hover .top {
+  background: #f3487f;
+}
+
+.single-service:hover .top .content span {
+  color: #fff;
+}
+
+.single-service:hover .top .content h3 {
+  color: #fff;
+}
+
+.WRK {
+  background-color: rgba(128,128,128,0.1);
+  min-height: 1000px;
+  background-image:url(../img/cup-coffee-wireless-keyboard-glasses.jpg);
+  background-size: 100%;
+  margin:none;
+  padding-top: 100px;
+} 
+
+.WRK {
+    background-attachment: fixed;
+  }
+
+.WRK .resume-title {
+  font-size: 36px;
+  font-weight: 1000;  
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #3b434a;
+  text-align: right;
+  padding-bottom: 30px;
+}
+
+.WRK .resume-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-right: 2px solid #82909c;
+  position: relative;
+  text-align: right;
+}
+
+.WRK .resume-item h4 {
+  line-height: 18px;
+  font-size: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.WRK .resume-item h5 {
+  font-size: 16px;
+  background: #eef0f2;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.WRK .resume-item ul {
+  padding-left: 20px;
+  
+}
+
+.WRK .resume-item ul li {
+  padding-bottom: 10px;
+  list-style-type: none;
+
+}
+
+.WRK .resume-item .txt {
+
+
+  text-shadow: 0.5px 2px 1px grey;
+}
+
+.WRK .resume-item:last-child {
+  padding-bottom: 10px;
+}
+
+.WRK .resume-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  right: -9px;
+  top: 0;
+  background: #fff;
+}
+
+.container1 {
+  display: flex;
+  min-height: 800vh;
+  width: 100%
+  padding:20px;
+  background: -webkit-linear-gradient(left, #a4d3d9, #f9cc01 );
+  justify-content: center;
+  width: 100%; 
+  min-height: 800px;
+}
+
+ .wrapper {
+  width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  alignment-baseline: center;
+  align-content: center;
+  
+
+
+}
+
+ .wrapper .card{
+  width: calc(33% - 10px);
+  background: #3b3b3d;
+  height: 300px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  margin-left: 20px;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  
+}
+
+ .wrapper .card .circle {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  /*border: 8px solid #fa4299;*/
+  border-radius: 50%;
+  
+
+}
+
+ .wrapper .card .circle .box {
+  height: 100%;
+  width: 100%;
+ /* background: #fff;*/
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+ .wrapper .card .circle:hover .box {
+  transform: translate(-50%, -50%) scale(1.07);
+}
+
+ .wrapper .card .circle .box,
+ .wrapper .card .circle .box span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: all 0.3s;
+}
+
+ .wrapper .card .circle .box span,
+ .wrapper .card .text{
+ font-size: 38px;
+ font-weight: 600;
+ font-family: sans-serif;
+ 
+ background: -webkit-linear-gradient(left, #a4d3d9, #f9cc01); 
+ -webkit-background-clip:text;
+ -webkit-text-fill-color: transparent;
+}
+
+ .wrapper .card .circle .box span {
+  font-size: 38px;
+ font-weight: 600;
+ font-family: sans-serif;
+  transform: translate(-45%, -50%);
+}
+
+ .wrapper .card .circle:hover .box span {
+  transform: translate(-45%, -50%) scale(1.09);
+}
+
+
+ .wrapper .card .text {
+  font-size: 20px;
+  font-weight: 600;
+  align-content: center;
+  
+}
+
+
+#medsos {
+	
+}
+
+.medsos .medsos_judul h1 {
+margin-bottom: 20px;
+}
+
+.biodata {
+	margin-bottom: 30px;
+}
+
+#data {
+  min-height: 1080px;
+	background-image:url(../img/yellow-dchool-desk-is-full-beautiful-stationery-lying-creative-way.jpg);
+  background-size: 100%;
+  background-attachment: fixed;
+	
+
+}
+
+#quote {
+	
+}
+
+#footer {
+	
+}

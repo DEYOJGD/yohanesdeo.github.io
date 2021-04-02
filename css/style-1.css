@@ -1,0 +1,62 @@
+.homenav {
+	width: 100% !important;
+	position: absolute !important;
+	z-index: 10;
+	background: rgba(0, 0, 0, 0.5) !important;
+	border-radius: 0 !important;
+}
+
+.homenav .container {
+	margin-left: 20px;
+}
+
+.homenav .navbar-toggler {
+   margin-right: 0px;
+   background-color: #ffffff;
+}
+
+.homenav .collapse li a:hover {
+	color: #3498db !important;
+}
+
+.carousel-inner .carousel-item .tales {
+	width: 50%;
+	height: 100px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand|Satisfy&display=swap');
+  .carousel-indicators li{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+  
+  .pt-6 {padding-top: 4rem; font-family: 'Satisfy';}
+  a {font-family: 'Quicksand'; color: #212529}
+  a:hover {text-decoration: none; font-weight: 400;}
+
+  #carouselExampleSlidesOnl {
+  	margin-bottom: 0px !important;
+  }
+
+  .row {
+  	margin-bottom: 0px !important;
+  }
+
+  .row .card {
+  	padding-bottom:10px;
+    padding-top: 10px;
+  }
+
+.footer {
+	padding-top: 10px;
+}
+
+.card-two {
+  margin-top: 20px !important;
+}
+
+.container .footer .display-4 .lead{
+  text-align: center !important;
+}
+
